@@ -1,0 +1,19 @@
+Hosting - Youtube videos:
+https://www.youtube.com/watch?v=p1QU3kLFPdg
+https://www.youtube.com/watch?v=VRgTYJyN9pg
+https://www.youtube.com/watch?v=EX4w9hsduNA&ab_channel=TonyTeachesTech
+https://domains.cloudflare.com/?domain=avocatanghelrazvan.ro
+
+.RO website:
+Doesnt seem to work: https://www.reddit.com/r/Domains/comments/vx3u85/obtained_a_ro_tld_but_unsure_how_to_setup/
+
+Gandi (has .ro):
+- https://youtu.be/dwuw4Y4mIs0?feature=shared&t=409
+- https://shop.gandi.net/en/domain/suggest?search=avocatanghelrazvan.ro
+- https://gist.github.com/matt-bailey/bbbc181d5234c618e4dfe0642ad80297
+
+Github - no nameservers: https://www.reddit.com/r/github/comments/97vqbt/does_github_pages_not_have_nameservers/
+
+Options:
+- https://www.rotld.ro/contact-info/
+- https://clienti.roleaf.ro/store/gazduire-web
