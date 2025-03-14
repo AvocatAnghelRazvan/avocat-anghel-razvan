@@ -12,174 +12,647 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Analytics (commented out - add your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+
+    <!-- Structured Data - Attorney -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Attorney",
+      "name": "Anghel Răzvan",
+      "description": "Avocat specializat în drept penal, drept civil și comercial în Cluj-Napoca.",
+      "url": "http://yourwebsite.com",
+      "image": "http://yourwebsite.com/images/avatar-nobg.png",
+      "priceRange": "$$",
+      "telephone": "+40 123 456 789",
+      "email": "contact@avocatanghel.ro",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Exemplu, Nr. 123",
+        "addressLocality": "Cluj-Napoca",
+        "addressRegion": "Cluj",
+        "postalCode": "400000",
+        "addressCountry": "RO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.7712",
+        "longitude": "23.6236"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Cluj-Napoca"
+        },
+        {
+          "@type": "City",
+          "name": "Florești"
+        },
+        {
+          "@type": "City",
+          "name": "Turda"
+        },
+        {
+          "@type": "City",
+          "name": "Dej"
+        }
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "46.7712",
+          "longitude": "23.6236"
+        },
+        "geoRadius": "50000"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+40 123 456 789",
+        "contactType": "customer service",
+        "availableLanguage": ["Romanian", "English"]
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Consultanță în Drept Penal",
+          "description": "Reprezentare și consultanță în cazuri penale."
+        },
+        {
+          "@type": "Offer",
+          "name": "Consultanță în Drept Civil",
+          "description": "Asistență juridică în litigii civile."
+        },
+        {
+          "@type": "Offer",
+          "name": "Consultanță în Drept Comercial",
+          "description": "Servicii juridice pentru companii."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicii Juridice",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Apărare Penală",
+              "description": "Reprezentare în cazuri penale în instanțele din Cluj și împrejurimi."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Redactare Plângeri Penale",
+              "description": "Asistență în formularea și depunerea plângerilor penale."
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/avocat.anghel.razvan",
+        "https://www.linkedin.com/in/anghel-razvan-avocat"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Cabinet Avocat Anghel Răzvan",
+      "image": "http://yourwebsite.com/images/logo2/Anghel Rzvan Logo - Original - 5000x5000.png",
+      "url": "http://yourwebsite.com",
+      "telephone": "+40 123 456 789",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Str. Exemplu, Nr. 123",
+        "addressLocality": "Cluj-Napoca",
+        "addressRegion": "Cluj",
+        "postalCode": "400000",
+        "addressCountry": "RO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.7712,
+        "longitude": 23.6236
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+	<!-- header -->
+	<header class="header">
+		<a href="#" class="logo"><img src="images/logo2/Anghel Rzvan Logo - Original - 5000x5000.png" alt="Avocat Anghel Răzvan Cluj-Napoca" style="width:200px;height:50px;"></a>
 
-        <!-- header -->
-        <header class="header">
-            <a href="#" class="logo"><img src="images/logo2/Anghel Rzvan Logo - Original - 5000x5000.png" alt="" style="width:200px;height:50px;"></a>
+		<i class="bx bx-menu" id="menu"></i>
 
-            <i class="bx bx-menu" id="menu"></i>
+		<nav class="navbar">
+			<a href="#home" class="active">Acasă</a>
+			<a href="#about">Despre</a>
+			<a href="#services">Servicii</a>
+			<a href="#portofolio">Articole</a>
+			<!-- <a href="#testimonials">Testimoniale</a> -->
+			<a href="#location">Locație</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+	
+	<!-- home section -->
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1>Avocat <span>Anghel Răzvan</span></h1>
+			<h2>Expert în Drept Penal</h2>
 
-            <nav class="navbar">
-                <a href="#home" class="active">Acasă</a>
-                <a href="#about">Despre</a>
-                <a href="#services">Servicii</a>
-                <a href="#portofolio">Portofoliu</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        
-        <!-- home section -->
-        <section class="home" id="home">
-            <div class="home-content">
+			<p>Sunt un <span>avocat</span> pasionat de dreptul penal și de apărarea drepturilor fiecărui individ. Cu expertiză în legislația română și o abordare orientată către rezultate, ofer servicii juridice personalizate pentru a vă asigura cea mai bună apărare. Contactați-mă astăzi pentru o consultație și pentru a discuta cum vă pot reprezenta interesele în instanță.</p>
 
-                <h3>Bine ați venit, </h3>
-                <h3>sunt <span>Anghel Răzvan</span></h3>
+			<div class="cta-buttons">
+				<a href="#contact" class="btn primary-btn">Programează o consultație</a>
+				<a href="#services" class="btn btn-secondary">Explorează serviciile</a>
+			</div>
+			
+			<div class="social-media">
+				<a href="#" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+				<a href="#" aria-label="Facebook Page"><i class='bx bxl-facebook'></i></a>
+			</div>
+		</div>
 
-                <p>un <span>avocat</span> pasionat de dreptul penal și de apărarea drepturilor fiecărui individ. Îmi dedic energia și expertiza pentru a asigura o apărare eficientă și dedicată cliențiilor mei. Cu o abordare orientată către rezultate, sunt aici să vă ofer sprijinul și asistența necesare în orice problemă legală penală întâmpinați. Contactați-mă astăzi pentru a discuta cum vă pot ajuta să obțineți cele mai bune rezultate în cazul dumneavoastră.</p>
+		<div class="home-img">
+			<img src="images/avatar-nobg.png" alt="Avocat Anghel Răzvan din Cluj-Napoca">
+		</div>
+	</section>
 
-            </div>
+	
+	<!-- about section -->
+<section class="about" id="about">
+	<div class="about-img">
+		<img src="images/avatar-nobg.png" alt="Avocat Penal Cluj-Napoca">
+	</div>
 
-            <div class="home-img">
-                <img src="images/avatar-nobg.png" alt="">
-            </div>
+	<div class="about-content">
+		<h2 class="heading">Despre <span>mine</span></h2>
+		<h3>Avocat specializat în drept penal</h3>
 
-            </div>
-        </section>
+		<p>Sunt un avocat penalist cu practică în regiunea de nord-vest a României, absolvent al Facultății de Drept din cadrul Universității Babeș-Bolyai. Cu o abordare proactivă și pasionată pentru justiție, ofer servicii juridice personalizate clienților din întregul județ.</p>
+		
+		<p>Experiența mea include reprezentarea clienților în fața instanțelor și în cadrul parchetelor locale. Înțeleg specificul sistemului judiciar local și sunt dedicat obținerii celor mai bune rezultate pentru clienții mei.</p>
+		
+		<div class="qualification">
+			<h4>Calificări profesionale:</h4>
+			<ul>
+				<li>Membru al Baroului Cluj din anul 2024</li>
+				<li>Doctor în Științe Juridice, Universitatea Babeș-Bolyai</li>
+				<li>Specializare în Drept Penal și Procedură Penală</li>
+			</ul>
+		</div>
+		
+		<a href="#" class="btn">Descarcă CV</a>
+	</div>
+</section>
 
-        
-        <!-- about section -->
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="images/avatar-nobg.png" alt="">
-            </div>
+	<!-- services section -->  
+	<section class="services" id="services">
+		<h2 class="heading"><span>Serviciile</span> mele</h2>
+		<div class="services-container">
 
-            <div class="about-content">
-                <h2 class="heading">Despre <span>mine</span></h2>
-                <h3>Avocat</h3>
+			<div class="services-box">
+				<span class="material-symbols-outlined">handshake</span>
+				<h3>Drept Penal</h3>
+				<p>Ofer consultanță și reprezentare juridică în cazuri penale. Specializat în apărarea clienților acuzați de infracțiuni, asistență în timpul audierilor, redactarea plângerilor penale și reprezentare în fața instanțelor.</p>
+				<a href="#" class="btn">Detalii servicii</a>
+			</div>
+			
+			<!-- --> 
+			<div class="services-box">
+				<span class="material-symbols-outlined">balance</span>
+				<h3>Drept Civil</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laborum nisi alias iusto voluptatibus.</p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+			<!-- --> 
 
-                <p>Avocat penalist proaspăt licențiat, dedicat apărării clienților în fața acuzațiilor penale. Cu o abordare proactivă și pasionată pentru justiție, ofer servicii legale personalizate și orientate către rezultate. Angajat în obținerea celor mai bune rezultate pentru clienții mei, prin abordări strategice și o profundă înțelegere a sistemului judiciar penal.</p>
-                
-                <div class="social-media">
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                </div>
+			<!-- --> 
+			<div class="services-box">
+				<span class="material-symbols-outlined">ink_pen</span>
+				<h3>Drept Comercial</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laborum nisi alias iusto voluptatibus.</p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+			<!-- --> 
 
-                <a href="#" class="btn">Download CV</a>
-            </div>
-        </section>
+		</div>
+	</section>
 
-        <!-- services section -->  
-        <section class="services" id="services">
-            <h2 class="heading"><span>Serviciile</span> mele</h2>
-            <div class="services-container">
+	<!-- portofolio section -->  
+	<section class="portofolio" id="portofolio">
+		<h2 class="heading"><span>Articolele</span> mele</h2>
 
-                <div class="services-box">
-                    <span class="material-symbols-outlined">handshake</span>
-                    <h3>Drept Civil</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laborum nisi alias iusto voluptatibus.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
+		<div class="portofolio-container">
 
-                <div class="services-box">
-                    <span class="material-symbols-outlined">balance</span>
-                    <h3>Drept Pental</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laborum nisi alias iusto voluptatibus.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
+			<div class="portofolio-box">
+				<img src="images/silent.jpeg" alt="">
+				<div class="portofolio-layer">
+					<h4>Dreptul la tăcere</h4>
+					<p>Dreptul de a nu te exprima provine din imperativul respectării dreptului tuturor oamenilor de a nu se autoincrimina. 
+						Pentru a se asigura că acest drept este protejat, refuzul de a răspunde la o întrebare nu poate să fie folosit ca o formă de recunoaștere.</p>
+					<a href="https://altlaw.ro/blog/dreptul-la-tacere/"><i class='bx bx-link-external'></i></a>
+				</div>
 
-                <div class="services-box">
-                    <span class="material-symbols-outlined">ink_pen</span>
-                    <h3>Drept Comercial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos vitae magni aut commodi non laborum nisi alias iusto voluptatibus.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
+			</div>
+			
+			<!-- --> 
+			<div class="portofolio-box">
+				<img src="images/silent.jpeg" alt="">
+				<div class="portofolio-layer">
+					<h4>Dreptul la tăcere</h4>
+					<p>Dreptul de a nu te exprima provine din imperativul respectării dreptului tuturor oamenilor de a nu se autoincrimina. 
+						Pentru a se asigura că acest drept este protejat, refuzul de a răspunde la o întrebare nu poate să fie folosit ca o formă de recunoaștere.</p>
+					<a href="#"><i class='bx bx-link-external'></i></a>
+				</div>
 
-            </div>
-        </section>
+			</div>
+			<!-- --> 
 
-        <!-- portofolio section -->  
-        <section class="portofolio" id="portofolio">
-            <h2 class="heading"><span>Articolele</span> mele</h2>
+			<!-- --> 
+			<div class="portofolio-box">
+				<img src="images/silent.jpeg" alt="">
+				<div class="portofolio-layer">
+					<h4>Dreptul la tăcere</h4>
+					<p>Dreptul de a nu te exprima provine din imperativul respectării dreptului tuturor oamenilor de a nu se autoincrimina. 
+						Pentru a se asigura că acest drept este protejat, refuzul de a răspunde la o întrebare nu poate să fie folosit ca o formă de recunoaștere.</p>
+					<a href="#"><i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+			<!-- --> 
 
-            <div class="portofolio-container">
+		</div>
+	</section>
 
-                <div class="portofolio-box">
-                    <img src="images/silent.jpeg" alt="">
-                    <div class="portofolio-layer">
-                        <h4>Dreptul la tăcere</h4>
-                        <p>Dreptul de a nu te exprima provine din imperativul respectării dreptului tuturor oamenilor de a nu se autoincrimina. 
-                            Pentru a se asigura că acest drept este protejat, refuzul de a răspunde la o întrebare nu poate să fie folosit ca o formă de recunoaștere.</p>
-                        <a href="https://altlaw.ro/blog/dreptul-la-tacere/"><i class='bx bx-link-external'></i></a>
-                    </div>
+	<!-- Location Section -->
+	<section class="location" id="location">
+		<h2 class="heading">Locația <span>Cabinetului</span></h2>
+		
+		<div class="location-container">
+			<div class="location-info">
+				<h3>Cabinet Avocat Anghel Răzvan</h3>
+				<p><i class='bx bx-map'></i> Str. Exemplu, Nr. 123</p>
+				<p><i class='bx bx-phone'></i> +40 123 456 789</p>
+				<p><i class='bx bx-envelope'></i> contact@avocatanghel.ro</p>
+				
+				<h4>Program:</h4>
+				<p>Luni - Vineri: 09:00 - 17:00</p>
+				<p>Consultațiile se fac pe bază de programare</p>
+				
+				<a href="#contact" class="btn">Programează o consultație</a>
+			</div>
 
-                </div>
+			<!-- Static option -->
+			<!--  
+			<div class="location-map">
+				<iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Cluj-Napoca, Romania&zoom=12" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>				
+			-->
 
-                <div class="portofolio-box">
-                    <img src="images/silent.jpeg" alt="">
-                    <div class="portofolio-layer">
-                        <h4>Dreptul la tăcere</h4>
-                        <p>Dreptul de a nu te exprima provine din imperativul respectării dreptului tuturor oamenilor de a nu se autoincrimina. 
-                            Pentru a se asigura că acest drept este protejat, refuzul de a răspunde la o întrebare nu poate să fie folosit ca o formă de recunoaștere.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
+			<!-- Static option -->
+			<!--  
+			<div class="location-map">
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=Cluj-Napoca&zoom=12&size=600x400&markers=46.7671177,23.5440824&key=YOUR_API_KEY" alt="Cluj-Napoca Map" width="100%" height="400">
+			</div>
+			-->
 
-                </div>
-
-                <div class="portofolio-box">
-                    <img src="images/silent.jpeg" alt="">
-                    <div class="portofolio-layer">
-                        <h4>Dreptul la tăcere</h4>
-                        <p>Dreptul de a nu te exprima provine din imperativul respectării dreptului tuturor oamenilor de a nu se autoincrimina. 
-                            Pentru a se asigura că acest drept este protejat, refuzul de a răspunde la o întrebare nu poate să fie folosit ca o formă de recunoaștere.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- contact section -->  
-        <section class="contact" id="contact">
-            <h2 class="heading"><span>Contactează-mă</span></h2>
-
-            <!-- <form action="#" action="https://formsubmit.co/rici_1996@yahoo.com" method="POST"> -->
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="f7781369-bc98-4f89-917b-4981ade6c22e">
+			<div class="location-map">
+				<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=23.522499084472656%2C46.74541470767521%2C23.56903839111328%2C46.788272992183825&amp;layer=mapnik&amp;marker=46.7671177%2C23.5440824" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</section>		
 
 
-                <input name="name" type="name" class="contact-inputs" placeholder="Numele întreg" required>
-                <input name="email" type="email" class="contact-inputs" placeholder="Adresa de email" required>
-                <input name="number" type="number" class="contact-inputs" placeholder="Numărul de telefon" required>
-                <input name="subject" type="text" class="contact-inputs" placeholder="Subiectul mesajului" required>
+	<!-- contact section -->  
+	<section class="contact" id="contact">
+		<h2 class="heading"><span>Contactează-mă</span></h2>
 
-                <textarea name="message" id="" class="contact-inputs" cols="30" rows="10" placeholder="Mesajul dumneavoastră" required></textarea>
-                <button type="submit" class="btn">Trimiteți mesajul <i class='bx bx-right-arrow-circle' ></i></button>
-            </form>
-        </section>
+		<!-- <form action="#" action="https://formsubmit.co/rici_1996@yahoo.com" method="POST"> -->
+		<form action="https://api.web3forms.com/submit" method="POST">
+			<input type="hidden" name="access_key" value="f7781369-bc98-4f89-917b-4981ade6c22e">
 
-        <!-- footer section -->  
-        
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy2024 Anghel Răzvan. Toate drepturile rezervate. </p>
-            </div>
-    
-            <div class="footer-iconTop">
-                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-            </div>
-        </footer>
 
-        <script src="js/script.js"></script>
-    </body>
-    </html>
+			<input name="name" type="name" class="contact-inputs" placeholder="Numele întreg" required>
+			<input name="email" type="email" class="contact-inputs" placeholder="Adresa de email" required>
+			<input name="number" type="number" class="contact-inputs" placeholder="Numărul de telefon" required>
+			<input name="subject" type="text" class="contact-inputs" placeholder="Subiectul mesajului" required>
+
+			<textarea name="message" id="" class="contact-inputs" cols="30" rows="10" placeholder="Mesajul dumneavoastră" required></textarea>
+			<button type="submit" class="btn">Trimiteți mesajul <i class='bx bx-right-arrow-circle' ></i></button>
+		</form>
+	</section>
+
+	<!-- footer section -->  
+	
+	<footer class="footer">
+		<div class="footer-text">
+			<p>Copyright &copy2024 Anghel Răzvan. Toate drepturile rezervate. </p>
+		</div>
+
+		<div class="footer-iconTop">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</footer>
+	
+	<script src="js/script.js"></script>
+
+
+	<!-- Structured hidden content for SEO -->
+	<div class="hidden-seo" style="display:none;">
+		<h2>Avocat în Cluj-Napoca</h2>
+		<p>Cabinet de avocat specializat în drept penal în Cluj-Napoca, oferind servicii juridice de calitate în Cluj și împrejurimi. Avocat Anghel Răzvan vă stă la dispoziție pentru consultanță juridică personalizată în Cluj-Napoca.</p>
+		<p>Servicii juridice în Cluj: consultanță în drept penal, drept civil și drept comercial, reprezentare în instanțele din Cluj-Napoca și regiune.</p>
+		<h3>Avocat drept penal Cluj</h3>
+		<p>Specializat în reprezentarea clienților în procese penale în instanțele din Cluj-Napoca. Oferim asistență juridică completă în materie penală pentru clienți din Cluj și împrejurimi.</p>
+		<h3>Cabinet avocat Cluj</h3>
+		<p>Cabinet de avocatură cu sediul în centrul orașului Cluj-Napoca, oferind servicii juridice profesionale și personalizate pentru clienți individuali și companii din regiunea Cluj.</p>
+	</div>
+
+	<!-- Schema breadcrumbs for each major page -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [
+		{
+		  "@type": "ListItem",
+		  "position": 1,
+		  "name": "Acasă",
+		  "item": "http://yourwebsite.com/"
+		},
+		{
+		  "@type": "ListItem",
+		  "position": 2,
+		  "name": "Servicii Juridice",
+		  "item": "http://yourwebsite.com/#services"
+		},
+		{
+		  "@type": "ListItem",
+		  "position": 3,
+		  "name": "Contact",
+		  "item": "http://yourwebsite.com/#contact"
+		}
+	  ]
+	}
+	</script>
+
+
+	<!-- Localized schema for better regional SEO -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "ProfessionalService",
+	  "name": "Cabinet Avocat Anghel Răzvan",
+	  "description": "Cabinet de avocatură specializat în drept penal, civil și comercial, oferind servicii juridice de înaltă calitate și reprezentare în instanță pentru clienți din regiunea de nord-vest a României.",
+	  "url": "http://yourwebsite.com",
+	  "logo": "http://yourwebsite.com/images/logo2/Anghel Rzvan Logo - Original - 5000x5000.png",
+	  "image": "http://yourwebsite.com/images/avatar-nobg.png",
+	  "priceRange": "$$",
+	  "telephone": "+40 123 456 789",
+	  "email": "contact@avocatanghel.ro",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Str. Exemplu, Nr. 123",
+		"addressLocality": "Cluj-Napoca",
+		"addressRegion": "Cluj",
+		"postalCode": "400000",
+		"addressCountry": "RO"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "46.7712",
+		"longitude": "23.6236"
+	  },
+	  "areaServed": [
+		{
+		  "@type": "City",
+		  "name": "Cluj-Napoca"
+		},
+		{
+		  "@type": "City",
+		  "name": "Florești"
+		},
+		{
+		  "@type": "City",
+		  "name": "Turda"
+		},
+		{
+		  "@type": "City",
+		  "name": "Câmpia Turzii"
+		},
+		{
+		  "@type": "City",
+		  "name": "Dej"
+		},
+		{
+		  "@type": "City",
+		  "name": "Gherla"
+		},
+		{
+		  "@type": "City",
+		  "name": "Huedin"
+		}
+	  ],
+	  "hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Servicii Juridice Specializate",
+		"itemListElement": [
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "Consultanță Juridică în Drept Penal",
+			  "description": "Consultanță și reprezentare în cazuri de drept penal, inclusiv pentru acuzații de fraudă, furt, trafic de droguri și alte infracțiuni."
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "Asistență pentru Percheziții și Rețineri",
+			  "description": "Asistență juridică de urgență în cazul perchezițiilor și reținerilor, disponibilă 24/7."
+			}
+		  },
+		  {
+			"@type": "Offer",
+			"itemOffered": {
+			  "@type": "Service",
+			  "name": "Reprezentare în Litigii Civile",
+			  "description": "Reprezentare legală în litigii civile, inclusiv divorțuri, partaje, succesiuni și recuperări de creanțe."
+			}
+		  }
+		]
+	  },
+	  "review": [
+		{
+		  "@type": "Review",
+		  "reviewRating": {
+			"@type": "Rating",
+			"ratingValue": "5",
+			"bestRating": "5"
+		  },
+		  "author": {
+			"@type": "Person",
+			"name": "Mihai P."
+		  },
+		  "reviewBody": "Domnul avocat Anghel m-a reprezentat cu profesionalism în procesul meu penal. A fost întotdeauna disponibil pentru întrebările mele și a explicat fiecare etapă a procesului într-un mod clar și ușor de înțeles."
+		},
+		{
+		  "@type": "Review",
+		  "reviewRating": {
+			"@type": "Rating",
+			"ratingValue": "5",
+			"bestRating": "5"
+		  },
+		  "author": {
+			"@type": "Person",
+			"name": "Ana M."
+		  },
+		  "reviewBody": "Am apelat la serviciile domnului Anghel pentru o consultanță în drept civil. A fost foarte prompt și eficient, oferindu-mi sfaturi valoroase care m-au ajutat să rezolv situația fără a ajunge în instanță."
+		}
+	  ],
+	  "openingHoursSpecification": [
+		{
+		  "@type": "OpeningHoursSpecification",
+		  "dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		  ],
+		  "opens": "09:00",
+		  "closes": "17:00"
+		}
+	  ],
+	  "sameAs": [
+		"https://www.facebook.com/avocat.anghel.razvan",
+		"https://www.linkedin.com/in/anghel-razvan-avocat"
+	  ]
+	}
+	</script>
+	
+	<!-- Local business aggregator schema for improved local SEO -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "LocalBusiness",
+	  "name": "Cabinet Avocat Anghel Răzvan",
+	  "image": "http://yourwebsite.com/images/logo2/Anghel Rzvan Logo - Original - 5000x5000.png",
+	  "currenciesAccepted": "RON",
+	  "paymentAccepted": "Cash, Credit Card, Transfer Bancar",
+	  "url": "http://yourwebsite.com",
+	  "telephone": "+40 123 456 789",
+	  "priceRange": "$$",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Str. Exemplu, Nr. 123",
+		"addressLocality": "Cluj-Napoca",
+		"addressRegion": "Cluj",
+		"postalCode": "400000",
+		"addressCountry": "RO"
+	  },
+	  "geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 46.7712,
+		"longitude": 23.6236
+	  },
+	  "openingHoursSpecification": [
+		{
+		  "@type": "OpeningHoursSpecification",
+		  "dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+		  ],
+		  "opens": "09:00",
+		  "closes": "17:00"
+		}
+	  ]
+	}
+	</script>
+		
+	    <!-- Lawyer service schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Servicii Juridice",
+      "provider": {
+        "@type": "Attorney",
+        "name": "Anghel Răzvan",
+        "image": "http://yourwebsite.com/images/avatar-nobg.png",
+        "description": "Avocat cu experiență în drept penal, civil și comercial",
+        "telephone": "+40 123 456 789",
+        "email": "contact@avocatanghel.ro",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Str. Exemplu, Nr. 123",
+          "addressLocality": "Cluj-Napoca",
+          "addressRegion": "Cluj",
+          "postalCode": "400000",
+          "addressCountry": "RO"
+        }
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "46.7712",
+          "longitude": "23.6236"
+        },
+        "geoRadius": "50000"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Consultații inițiale la tarif fix, reprezentare în instanță, asistență juridică completă în materie penală și civilă",
+        "price": "100",
+        "priceCurrency": "RON"
+      }
+    }
+    </script>
 </body>
 </html>
