@@ -679,6 +679,8 @@ PORTFOLIO SECTION
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    text-align: justify;
+    
 }
 
 .location-info i {
