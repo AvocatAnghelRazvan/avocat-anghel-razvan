@@ -33,3 +33,30 @@ window.onscroll = () => {
 };
 
 
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all navbar links
+    const links = document.querySelectorAll('.navbar a');
+    
+    // Add click event to each link
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Only process links that point to an ID on the page
+        if(this.getAttribute('href').startsWith('#')) {
+          e.preventDefault(); // Prevent default jump behavior
+          
+          // Get the target element
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          // If target exists, scroll to it
+          if(targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 1, // Adjust offset as needed
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  });

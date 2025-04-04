@@ -2,12 +2,14 @@
 
 :root {
     
-    --bg-color: #f5f8fc;
-    --second-bg-color: #e7edf7;
-    --text-color: #0b365a;
-    --main-color: #3a5189;
-    --accent-color: #6884c3;
-    --light-text: #f5f8fc;
+    --bg-color: #FFFFFF;
+    --second-bg-color: rgba(74, 74, 74, 0.3);
+
+    --text-color: #000000;
+    --main-color: #7d000B;
+
+    --accent-color: #FFFFFF;
+    --light-text: #FFFFFF;
     
     /* --bg-color: #121a29;
     --second-bg-color: #1c2b42;
@@ -80,7 +82,7 @@ HEADER SECTION
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 9%;
+    padding: 0rem 9%;
     background: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
@@ -91,15 +93,16 @@ HEADER SECTION
 }
 
 .header.sticky {
-    padding: 1rem 9%;
-    background: rgba(231, 237, 247, 0.95);
+    padding: 0rem 9%;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: .1rem solid rgba(0,0,0,.1);
 }
 
 .logo img {
-    max-height: 50px;
-    width: auto;
+    max-width: 400px;
+    max-height: 100px;
+    /*width: auto;*/
     transition: var(--transition);
 }
 
@@ -413,7 +416,7 @@ SERVICES SECTION
 .services-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    background: #f0f5ff;
+    background: --second-bg-color;
 }
 
 .services-box span {
