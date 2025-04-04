@@ -17,3 +17,22 @@ https://www.youtube.com/watch?v=-HeadgoqJ7A
 - maybe:
 https://www.youtube.com/watch?v=sGQSz22U8VM
 https://www.youtube.com/watch?v=Yg6POD0M30w
+
+
+
+DNS records:
+A
+ftp
+93.115.53.130
+
+	
+
+A
+avocat-anghel.ro
+93.115.53.130
+
+
+
+CNAME
+mail
+avocat-anghel.ro
