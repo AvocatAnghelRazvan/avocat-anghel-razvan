@@ -85,6 +85,7 @@ HEADER SECTION
     padding: 0rem 9%;
     background: var(--second-bg-color);
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -162,7 +163,8 @@ HOME SECTION
 */
 .home {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between;*/
+    justify-content: center;
     align-items: center;
     padding-top: 15rem;
 }
@@ -266,8 +268,8 @@ HOME SECTION
 }
 
 .home-img img {
-    width: 35vw;
-    max-width: 500px;
+    width: 28vw;
+    max-width: 400px;
     filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
     /* animation: moveUpDown 4s ease-in-out infinite;
     transition: var(--transition);*/
