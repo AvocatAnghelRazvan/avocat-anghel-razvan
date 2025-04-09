@@ -1,0 +1,50 @@
+	
+
+NS
+avocat-anghel.ro
+ns4.romarg.com
+DNS only
+
+
+
+
+NS
+avocat-anghel.ro
+ns3.romarg.com
+DNS only
+
+
+
+
+NS
+avocat-anghel.ro
+ns2.romarg.com
+DNS only
+
+
+
+
+NS
+avocat-anghel.ro
+ns1.romarg.com
+DNS only
+
+
+
+
+A
+avocat-anghel.ro
+93.115.53.130
+
+Proxied
+
+
+
+
+
+
+MX
+avocat-anghel.ro
+avocat-anghel.ro
+0
+DNS only
